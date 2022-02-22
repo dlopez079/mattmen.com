@@ -12,6 +12,8 @@
               <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
                 <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                   <div class="flex items-center justify-between w-full md:w-auto">
+
+                    {{-- Small Icon towards top left. --}}
                     <a href="#">
                       <span class="sr-only">Workflow</span>
   
@@ -53,6 +55,8 @@
                       </svg>
   
                     </a>
+
+                    {{-- Mobile NavBar --}}
                     <div class="-mr-2 flex items-center md:hidden">
                       <button @click="open = !open" type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-500" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
@@ -64,6 +68,8 @@
                     </div>
                   </div>
                 </div>
+
+                {{-- Nav link Section --}}
                 <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                   <a href="#about" class="font-medium text-gray-500 hover:text-gray-900">About</a>
   
@@ -144,7 +150,10 @@
   
           </div>
   
+          {{-- Main Hero Area --}}
           <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+
+            {{-- Title --}}
             <div class="sm:text-center lg:text-left">
               <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
                 <span class="block xl:inline">David Lopez</span>
@@ -153,12 +162,18 @@
               <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 Full Stack Web/App Developer with experience as a Graphic Designer, Project Manager, and IT Managed Service Consultant.
               </p>
+
+              {{-- Buttons Section --}}
               <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+
+                {{-- Blog Button --}}
                 <div class="hidden rounded-md shadow">
                   <a href="#blog" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700 md:py-4 md:text-lg md:px-10">
                     Blog
                   </a>
                 </div>
+
+                {{-- Projects Button --}}
                 <div class="mt-3 sm:mt-0 sm:ml-3">
                   <a href="#projects" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-gray-700 bg-gray-100 hover:bg-gray-200 md:py-4 md:text-lg md:px-10">
                     Projects
@@ -166,6 +181,7 @@
                 </div>
               </div>
             </div>
+
           </main>
         </div>
       </div>
