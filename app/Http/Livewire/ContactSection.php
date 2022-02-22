@@ -15,12 +15,12 @@ class ContactSection extends Component
     public $transmission;
 
     protected $rules = [
-        'firstName' => 'required',
-        'lastName' => 'required',
+        'firstName' => 'required:10',
+        'lastName' => 'required:max:10',
         'email' => 'required|email',
         'phone' => 'required|min:10',
         'country' => 'required',
-        'transmission' => 'required',
+        'transmission' => 'required|min:10|max:100',
     ];
 
     public function submit()
