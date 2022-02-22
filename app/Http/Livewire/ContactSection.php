@@ -15,27 +15,24 @@ class ContactSection extends Component
     public $transmission;
 
     protected $rules = [
-        'firstName' => 'required:10',
-        'lastName' => 'required:max:10',
+        'firstName' => 'required|max:10',
+        'lastName' => 'required|max:10',
         'email' => 'required|email',
         'phone' => 'required|min:10',
         'country' => 'required',
         'transmission' => 'required|min:10|max:100',
     ];
 
+    public function updated($propertyName)
+    {
+        $this->validateOnly($propertyName);
+    }
+    
     public function submit()
     {
-        $this->validate();
-
-        // Create a contact record on database via migration.
-        Contact::create([
-            'first_name' => $this->firstName,
-            'last_name' => $this->lastName,
-            'email' => $this->email,
-            'phone' => $this->phone,
-            'country' => $this->country,
-            'transmission' => $this->transmission
-        ]);
+        $validatedData = $this->validate();
+ 
+        Contact::create($validatedData);
     }
 
     public function render()
