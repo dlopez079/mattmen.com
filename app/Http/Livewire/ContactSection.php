@@ -18,7 +18,7 @@ class ContactSection extends Component
         'firstName' => 'required',
         'lastName' => 'required',
         'email' => 'required|email',
-        'phone' => 'required',
+        'phone' => 'required|min:10',
         'country' => 'required',
         'message' => 'required',
     ];
