@@ -32,7 +32,7 @@
                 <div class="mt-5 md:mt-0 md:col-end-7 md:col-span-3">
 
                     {{-- Form Begins --}}
-                    <form action="#" method="POST">
+                    <form wire:submit.prevent="submit">
 
                         {{-- Field Section --}}
                         <div class="grid grid-cols-6 gap-6">
@@ -99,7 +99,7 @@
                             {{-- I used the following button tags for the next two buttons. --}}
                             <button wire:click="$refresh"
                                 class="ml-3 bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-black hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Reset</button>
-                            <button wire:submit.prevent="submit" type="submit"
+                            <button type="submit"
                                 class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-black hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Save</button>
                         </div>
                     </form>
