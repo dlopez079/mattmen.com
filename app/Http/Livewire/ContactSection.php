@@ -29,12 +29,12 @@ class ContactSection extends Component
 
         // Create a contact record on database via migration.
         Contact::create([
-            'first_name' => 'firstName',
-            'last_name' => 'lastName',
-            'email' => 'email',
-            'phone' => 'phone',
-            'country' => 'country',
-            'message' => 'message',
+            'first_name' => $this->firstName,
+            'last_name' => $this->lastName,
+            'email' => $this->email,
+            'phone' => $this->phone,
+            'country' => $this->country,
+            'message' => $this->message
         ]);
     }
 
