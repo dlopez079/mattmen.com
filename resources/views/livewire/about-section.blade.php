@@ -41,12 +41,7 @@
             </h1>
         </div>
         <div class="mt-6 prose prose-gray prose-lg text-gray-500 mx-auto">
-            <p>Mattmen, Inc. is an S-Corp founded in Florida in 2014. The core concept of the Mattmen culture is to
-                value our partner's relationship and mature with them. Our long-standing relationships validate
-                productive metamorphosis even during a horrendous and turbulent pandemic. Mattmen, Inc did that as a
-                managed service provider overlooking network infrastructures for multiple partners who benefited and
-                profited with strategic planning and foresight. Mattmen, Inc added Full Stack Web/Application
-                design, creation, and implementation to their portfolio.
+            <p>Mattmen, Inc. is an S-Corp founded in Florida in 2014.  The core concept of the Mattmen culture is to value our partner's relationship and mature with them.  Our long-standing relationships validate productive metamorphosis even during a horrendous and turbulent pandemic.  Mattmen, Inc successfully aided all clientele as a managed service provider overlooking network infrastructures for multiple partners who benefited and profited with strategic planning and foresight.  Mattmen, Inc added Full Stack Web/Application design, creation, and implementation to their portfolio.  As always, Mr. David Lopez is leading the way into this new development venture.
             </p>
         </div>
     </div>
