@@ -25,7 +25,14 @@
                         <p>{{ $country }}</p>
                         <p class="truncate">{{ $transmission }}</p>
                     </div>
-                    
+
+                    {{-- If form successful display message. --}}
+                    @if (session()->has('message'))
+                        <div class="alert alert-success">
+                            {{ session('message') }}
+                        </div>
+                    @endif
+
                 </div>
 
                 {{-- The form section will span over two columns. --}}
@@ -44,7 +51,9 @@
                                     autocomplete="given-name"
                                     class="mt-1 focus:ring-gray-500 focus:border-gray-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                     placeholder="ex. David" required>
-                                @error('firstName') <span class="error">{{ $message }}</span> @enderror
+                                @error('firstName')
+                                    <span class="error">{{ $message }}</span>
+                                @enderror
                             </div>
 
                             {{-- Last Name --}}
@@ -54,7 +63,9 @@
                                     autocomplete="family-name"
                                     class="mt-1 focus:ring-gray-500 focus:border-gray-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                     placeholder="ex. Lopez" required>
-                                @error('lastName') <span class="error">{{ $message }}</span> @enderror
+                                @error('lastName')
+                                    <span class="error">{{ $message }}</span>
+                                @enderror
                             </div>
 
                             {{-- Email --}}
@@ -63,7 +74,9 @@
                                 <input wire:model="email" type="email" name="email" id="email" autocomplete="email"
                                     class="mt-1 focus:ring-gray-500 focus:border-gray-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                     placeholder="name@domain.com" required>
-                                @error('email') <span class="error">{{ $message }}</span> @enderror
+                                @error('email')
+                                    <span class="error">{{ $message }}</span>
+                                @enderror
                             </div>
 
                             {{-- Phone --}}
@@ -72,7 +85,9 @@
                                 <input wire:model="phone" type="text" name="phone" id="phone" autocomplete="phone"
                                     class="mt-1 focus:ring-gray-500 focus:border-gray-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                     placeholder="123-45-6789" required>
-                                @error('phone') <span class="error">{{ $message }}</span> @enderror
+                                @error('phone')
+                                    <span class="error">{{ $message }}</span>
+                                @enderror
                             </div>
 
                             {{-- Country --}}
@@ -85,17 +100,22 @@
                                     <option>Canada</option>
                                     <option>Mexico</option>
                                 </select>
-                                @error('country') <span class="error">{{ $message }}</span> @enderror
+                                @error('country')
+                                    <span class="error">{{ $message }}</span>
+                                @enderror
                             </div>
 
                             {{-- transmission --}}
                             <div class="col-span-6 md:col-span-4">
                                 <label for="transmission" class="block text-sm font-medium text-white">Transmission
                                 </label>
-                                <textarea wire:model="transmission" type="transmission" name="transmission" id="transmission"
+                                <textarea wire:model="transmission" type="transmission" name="transmission"
+                                    id="transmission"
                                     class="mt-1 focus:ring-gray-500 focus:border-gray-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                     placeholder="Enter Details of your inquiry..." rows="5"></textarea>
-                                @error('transmission') <span class="error">{{ $message }}</span> @enderror
+                                @error('transmission')
+                                    <span class="error">{{ $message }}</span>
+                                @enderror
                             </div>
 
                         </div>
@@ -109,6 +129,7 @@
                             <button type="submit"
                                 class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-black hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Save</button>
                         </div>
+
                     </form>
 
                 </div>
@@ -116,7 +137,7 @@
             </div>
 
         </div>
-        
+
     </div>
 
 </section>

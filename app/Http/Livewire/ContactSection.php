@@ -36,8 +36,7 @@ class ContactSection extends Component
      * If the user does not listen to the rules, spit out these custom messages.
      * 
      */
-    protected $messages = 
-    [
+    protected $messages = [
         'firstName.required' => "If you don't know, then use your Nick Name",
         'lastName.require' => 'Refer to your birth certificate!',
         'email.required' => 'You cannot leave this blank!',
@@ -51,6 +50,7 @@ class ContactSection extends Component
     public function updated($propertyName)
     {
         $this->validateOnly($propertyName);
+
     }
     
     /**
@@ -68,6 +68,8 @@ class ContactSection extends Component
             'country' => $this->country,
             'transmission' => $this->transmission
         ]);  
+
+        session()->flash('message', 'You message is sent.');
     }
 
     /** 
