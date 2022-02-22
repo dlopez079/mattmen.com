@@ -23,7 +23,7 @@
                         <p>{{ $email }}</p>
                         <p>{{ $phone }}</p>
                         <p>{{ $country }}</p>
-                        <p>{{ $transmission }}</p>
+                        <p class="truncate">{{ $transmission }}</p>
                     </div>
                     
                 </div>
