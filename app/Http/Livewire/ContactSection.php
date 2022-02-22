@@ -58,9 +58,16 @@ class ContactSection extends Component
      */
     public function submit()
     {
-        $validatedData = $this->validate();
+        $this->validate();
  
-        Contact::create($validatedData);
+        Contact::create([
+            'first_name' => $this->firstName,
+            'last_name' => $this->lastName,
+            'email' => $this->email,
+            'phone' => $this->phone,
+            'country' => $this->country,
+            'transmission' => $this->transmission
+        ]);  
     }
 
     /** 
