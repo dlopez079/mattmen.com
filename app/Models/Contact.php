@@ -20,6 +20,6 @@ class Contact extends Model
         'email',
         'phone',
         'country',
-        'message'
+        'transmission'
     ];
 }

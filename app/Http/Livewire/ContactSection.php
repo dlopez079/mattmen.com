@@ -12,7 +12,7 @@ class ContactSection extends Component
     public $email;
     public $phone;
     public $country;
-    public $message;
+    public $transmission;
 
     protected $rules = [
         'firstName' => 'required',
@@ -20,7 +20,7 @@ class ContactSection extends Component
         'email' => 'required|email',
         'phone' => 'required|min:10',
         'country' => 'required',
-        'message' => 'required',
+        'transmission' => 'required',
     ];
 
     public function submit()
@@ -34,7 +34,7 @@ class ContactSection extends Component
             'email' => $this->email,
             'phone' => $this->phone,
             'country' => $this->country,
-            'message' => $this->message
+            'transmission' => $this->transmission
         ]);
     }
 

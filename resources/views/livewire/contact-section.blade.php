@@ -23,7 +23,7 @@
                         <p>{{ $email }}</p>
                         <p>{{ $phone }}</p>
                         <p>{{ $country }}</p>
-                        <p>{{ $message }}</p>
+                        <p>{{ $transmission }}</p>
                     </div>
                     
                 </div>
@@ -83,11 +83,11 @@
                                 </select>
                             </div>
 
-                            {{-- message --}}
+                            {{-- transmission --}}
                             <div class="col-span-6 md:col-span-4">
-                                <label for="message" class="block text-sm font-medium text-white">Message
+                                <label for="transmission" class="block text-sm font-medium text-white">transmission
                                 </label>
-                                <textarea wire:model="message" type="message" name="message" id="message"
+                                <textarea wire:model="transmission" type="transmission" name="transmission" id="transmission"
                                     class="mt-1 focus:ring-gray-500 focus:border-gray-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                     placeholder="Enter Details of your inquiry..." rows="5"></textarea>
                             </div>
