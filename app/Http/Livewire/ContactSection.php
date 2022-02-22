@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
+use App\Models\Contact;
 
 class ContactSection extends Component
 {
@@ -27,7 +28,7 @@ class ContactSection extends Component
         $this->validate();
 
         // Create a contact record on database via migration.
-        ContactSection::create([
+        Contact::create([
             'first_name' => 'firstName',
             'last_name' => 'lastName',
             'email' => 'email',
