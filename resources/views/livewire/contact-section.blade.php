@@ -85,7 +85,7 @@
 
                             {{-- transmission --}}
                             <div class="col-span-6 md:col-span-4">
-                                <label for="transmission" class="block text-sm font-medium text-white">transmission
+                                <label for="transmission" class="block text-sm font-medium text-white">Transmission
                                 </label>
                                 <textarea wire:model="transmission" type="transmission" name="transmission" id="transmission"
                                     class="mt-1 focus:ring-gray-500 focus:border-gray-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
