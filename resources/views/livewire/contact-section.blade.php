@@ -25,14 +25,7 @@
                         <p>{{ $country }}</p>
                         <p class="truncate">{{ $transmission }}</p>
                     </div>
-                    <br>
-                    {{-- If form successful display message. --}}
-                    @if (session()->has('message'))
-                        <div class="border rounded shadow border-black p-4 m-4 bg-white text-black">
-                            <p>{{ session('message') }}</p>
-                        </div>
-                    @endif
-
+                    
                 </div>
 
                 {{-- The form section will span over two columns. --}}
@@ -127,8 +120,15 @@
                             <button type="reset"
                                 class="ml-3 bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-black hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Reset</button>
                             <button type="submit"
-                                class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-black hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Save</button>
+                                class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-black hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">Submit</button>
                         </div>
+
+                        {{-- If form successful display message. --}}
+                        @if (session()->has('message'))
+                            <div class="border rounded shadow border-white p-4 bg-black text-white">
+                                <p>{{ session('message') }}</p>
+                            </div>
+                        @endif
 
                     </form>
 
