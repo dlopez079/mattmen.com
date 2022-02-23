@@ -25,7 +25,7 @@
                         <p>{{ $country }}</p>
                         <p class="truncate">{{ $transmission }}</p>
                     </div>
-                    
+
                 </div>
 
                 {{-- The form section will span over two columns. --}}
@@ -125,8 +125,11 @@
 
                         {{-- If form successful display message. --}}
                         @if (session()->has('message'))
-                            <div class="border rounded shadow border-white p-4 bg-black text-white">
-                                <p>{{ session('message') }}</p>
+                            <div class="grid grid-cols-6 gap-6">
+                                <div
+                                    class="border rounded shadow border-white p-4 bg-black text-white col-span-6 md:col-span-4">
+                                    <p>{{ session('message') }}</p>
+                                </div>
                             </div>
                         @endif
 
