@@ -1,4 +1,4 @@
-<section id="contact-section" class="relative py-10 bg-gray-600 overflow-hidden">
+<section id="contact" class="relative py-10 bg-gray-600 overflow-hidden">
 
     {{-- The form section and the button section will be separated with a space of six --}}
     <div class="space-y-6">
@@ -25,11 +25,11 @@
                         <p>{{ $country }}</p>
                         <p class="truncate">{{ $transmission }}</p>
                     </div>
-
+                    <br>
                     {{-- If form successful display message. --}}
                     @if (session()->has('message'))
-                        <div class="alert alert-success">
-                            {{ session('message') }}
+                        <div class="border rounded shadow border-black p-4 m-4 bg-white text-black">
+                            <p>{{ session('message') }}</p>
                         </div>
                     @endif
 
