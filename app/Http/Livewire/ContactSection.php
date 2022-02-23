@@ -69,7 +69,9 @@ class ContactSection extends Component
             'transmission' => $this->transmission
         ]);  
 
-        session()->flash('message', 'You message is sent.');
+        $this->reset();
+
+        session()->flash('message', 'Your transmission is successfully sent.');
     }
 
     /** 
