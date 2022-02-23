@@ -134,7 +134,7 @@
                   </div>
                 </div>
                 <div class="px-2 pt-2 pb-3 space-y-1 text-center">
-                  <a href="#hero" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About</a>
+                  <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About</a>
   
                   <a href="#blog" class="hidden block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Blog</a>
   
