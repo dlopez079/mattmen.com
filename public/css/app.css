@@ -2708,10 +2708,6 @@ select {
     padding-right: 2rem;
   }
 
-  .lg\:pb-28 {
-    padding-bottom: 7rem;
-  }
-
   .lg\:text-left {
     text-align: left;
   }
@@ -2726,8 +2722,8 @@ select {
     display: inline;
   }
 
-  .xl\:pb-32 {
-    padding-bottom: 8rem;
+  .xl\:pb-28 {
+    padding-bottom: 7rem;
   }
 }
 
